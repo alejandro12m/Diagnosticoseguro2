@@ -82,7 +82,7 @@ namespace DiagnosticoMedico.Controllers
             var ordenExamenes = await(from o in _context.OrdenExamen
                                       join e in _context.Examen on o.ExamenId equals e.ExamenId
                                       join l in _context.OrdenLaboratorio on o.OrdenId equals l.OrdenLaboratorioId
-                                      where o.Estado == "Pendiente"
+                                      where o.EstadoOrdenExamen == "Pendiente"
                                       select new 
                                       {
                                           l.OrdenLaboratorioCodigo,
