@@ -98,26 +98,22 @@ namespace DiagnosticoMedico.Controllers
         }
 
 
-
-        //Exámenes pendientes por área
-        [HttpGet("pendientes-por-area")]
-        public async Task<IActionResult> GetPendientesPorArea()
+        [HttpGet("pendientes")]
+        public async Task<IActionResult> GetPendientesTodasOrdenes()
         {
-            var data = await (
+            var pendientes = await (
                 from oe in _context.OrdenExamen
-                where oe.Estado == "Pendiente"
-                group oe by oe.AreaLaboratorio into g
-                select new
-                {
-                    Area = g.Key,
-                    Pendientes = g.Count()
-                }
-            ).ToListAsync();
+                join ol in _context.OrdenLaboratorio
+                    on oe.OrdenId equals ol.OrdenLaboratorioId
+                where ol.Estado == "Pendiente"
+                select oe
+            ).CountAsync();
 
-            return Ok(data);
+            return Ok(new
+            {
+                pendientes
+            });
         }
-
-
 
         //Tiempo total por área
         [HttpGet("tiempo-por-area")]
