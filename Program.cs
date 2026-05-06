@@ -31,9 +31,7 @@ app.Urls.Add($"http://0.0.0.0:{port}");
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<DiagnosticoMedicoContext>();
-
-    context.Database.EnsureDeleted();   // 💣 BORRA TODO
-    context.Database.EnsureCreated();   // 🧱 CREA BIEN
+    context.Database.Migrate();
 }
 
 // ✅ Swagger SIEMPRE activo

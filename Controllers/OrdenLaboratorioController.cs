@@ -234,7 +234,7 @@ namespace DiagnosticoMedico.Controllers
             return Ok(data);
         }
 
-
+        //lalo
         [HttpPut("MarcarComolisto/{code}")]
         public async Task<IActionResult> PutActualizarEstado(string code) {
             var actualizacion = await (from o in _context.OrdenLaboratorio
