@@ -1,0 +1,1073 @@
+[
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "GetExamen",
+    "RelativePath": "api/Examen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "PostExamen",
+    "RelativePath": "api/Examen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tiempoProcesamiento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ayuno",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "GetExamen",
+    "RelativePath": "api/Examen/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "PutExamen",
+    "RelativePath": "api/Examen/{code}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "examen",
+        "Type": "DiagnosticoMedico.Dominio.Examen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "DeleteExamen",
+    "RelativePath": "api/Examen/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "GetCantidadExamenes",
+    "RelativePath": "api/Examen/cantidad-por-examen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ExamenController",
+    "Method": "GetMasSolicitados",
+    "RelativePath": "api/Examen/examenes-mas-solicitados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.InformeController",
+    "Method": "GetInforme",
+    "RelativePath": "api/Informe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.InformeController",
+    "Method": "GetInforme",
+    "RelativePath": "api/Informe/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.InformeController",
+    "Method": "DeleteInforme",
+    "RelativePath": "api/Informe/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.InformeController",
+    "Method": "PutInforme",
+    "RelativePath": "api/Informe/actualizar/{code}/{ordenCode}/{fechaEmision}/{observacionesGenerales}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fechaEmision",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      },
+      {
+        "Name": "observacionesGenerales",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "ordenCode",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.InformeController",
+    "Method": "PostInforme",
+    "RelativePath": "api/Informe/CrearInforme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ordenCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaEmision",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "observacionesGenerales",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "GetMuestra",
+    "RelativePath": "api/Muestras",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "PostMuestra",
+    "RelativePath": "api/Muestras",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TipoMuestra",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecoleccion",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Volumen",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Codicion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DiagnosticoMedico.Dominio.Muestra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "GetMuestraCodigo",
+    "RelativePath": "api/Muestras/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "PutMuestra",
+    "RelativePath": "api/Muestras/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "muestra",
+        "Type": "DiagnosticoMedico.Dominio.Muestra",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "DeleteMuestra",
+    "RelativePath": "api/Muestras/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.MuestrasController",
+    "Method": "GetMuestrasPorTipo",
+    "RelativePath": "api/Muestras/muestras-por-tipo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetOrdenExamen",
+    "RelativePath": "api/OrdenExamen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "PostOrdenExamen",
+    "RelativePath": "api/OrdenExamen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OrdenCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExamenCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MuestraCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AreaLaboratorio",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "PutOrdenExamen",
+    "RelativePath": "api/OrdenExamen/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ordenExamen",
+        "Type": "DiagnosticoMedico.Dominio.OrdenExamen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "DeleteOrdenExamen",
+    "RelativePath": "api/OrdenExamen/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetSinMuestra",
+    "RelativePath": "api/OrdenExamen/examenes-sin-muestra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetOrdenExamenPorMedico",
+    "RelativePath": "api/OrdenExamen/Mostrar-Datos-A-Doctores/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetOrdenesConMuestra",
+    "RelativePath": "api/OrdenExamen/ordenes-con-muestra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetOrdenExamenPendientes",
+    "RelativePath": "api/OrdenExamen/Pendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetPendientesPorArea",
+    "RelativePath": "api/OrdenExamen/pendientes-por-area",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenExamenController",
+    "Method": "GetTiempoPorArea",
+    "RelativePath": "api/OrdenExamen/tiempo-por-area",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetOrdenLaboratorio",
+    "RelativePath": "api/OrdenLaboratorio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetOrdenLaboratorio",
+    "RelativePath": "api/OrdenLaboratorio/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "PutOrdenLaboratorio",
+    "RelativePath": "api/OrdenLaboratorio/{code}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "PacienteCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MedicoCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaOrden",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "TipoAtencion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Observaciones",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "DeleteOrdenLaboratorio",
+    "RelativePath": "api/OrdenLaboratorio/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "BuscarDetalleOrden",
+    "RelativePath": "api/OrdenLaboratorio/buscar-detalle-orden/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetDetalleOrdenes",
+    "RelativePath": "api/OrdenLaboratorio/detalle-ordenes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetDetalleOrdenesByTipoAtencion",
+    "RelativePath": "api/OrdenLaboratorio/detalle-ordenes/{TipoAtencion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TipoAtencion",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetPorFecha",
+    "RelativePath": "api/OrdenLaboratorio/examenes-por-fecha",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "PostOrdenLaboratorio",
+    "RelativePath": "api/OrdenLaboratorio/HacerOrdenLaboratorio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PacienteCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MedicoCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaOrden",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "TipoAtencion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Observaciones",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetHorasTotalesPorOrden",
+    "RelativePath": "api/OrdenLaboratorio/horas-totales-por-orden",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetMuestrasPorEstado",
+    "RelativePath": "api/OrdenLaboratorio/muestras-por-estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetOrdenesMasExamenes",
+    "RelativePath": "api/OrdenLaboratorio/ordenes-mas-examenes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "GetOrdenesPorAtencion",
+    "RelativePath": "api/OrdenLaboratorio/ordenes-por-atencion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "GetParametroExamen",
+    "RelativePath": "api/ParametroExamen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "PostParametroExamen",
+    "RelativePath": "api/ParametroExamen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "codeExamen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "unidad",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "valuemin",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "valuemax",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DiagnosticoMedico.Dominio.ParametroExamen",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "GetParametroExamen",
+    "RelativePath": "api/ParametroExamen/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "PutParametroExamen",
+    "RelativePath": "api/ParametroExamen/{code}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "parametroExamen",
+        "Type": "DiagnosticoMedico.Dominio.ParametroExamen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "DeleteParametroExamen",
+    "RelativePath": "api/ParametroExamen/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ParametroExamenController",
+    "Method": "GetParametrosConExamen",
+    "RelativePath": "api/ParametroExamen/parametros-examen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "GetResultado",
+    "RelativePath": "api/Resultadoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "PostResultado",
+    "RelativePath": "api/Resultadoes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "parametroexamencodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "muestracodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "valor",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "equipoCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fecharesultado",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "GetResultado",
+    "RelativePath": "api/Resultadoes/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "PutResultado",
+    "RelativePath": "api/Resultadoes/{code}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "resultado",
+        "Type": "DiagnosticoMedico.Dominio.Resultado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "DeleteResultado",
+    "RelativePath": "api/Resultadoes/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "GetResultadosCompletos",
+    "RelativePath": "api/Resultadoes/completo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "GetResultadoPorCodigo",
+    "RelativePath": "api/Resultadoes/ConsultaMedico/{codigoOrden}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoOrden",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ResultadoesController",
+    "Method": "GetResultadosParaDoctor",
+    "RelativePath": "api/Resultadoes/doctor/consultar-resultados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ValidacionResultadoesController",
+    "Method": "GetValidacionResultado",
+    "RelativePath": "api/ValidacionResultadoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ValidacionResultadoesController",
+    "Method": "PostValidacionResultado",
+    "RelativePath": "api/ValidacionResultadoes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "coderesultado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "medicoCodigo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaValidacion",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "observacion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ValidacionResultadoesController",
+    "Method": "GetValidacionResultado",
+    "RelativePath": "api/ValidacionResultadoes/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ValidacionResultadoesController",
+    "Method": "PutValidacionResultado",
+    "RelativePath": "api/ValidacionResultadoes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "validacionResultado",
+        "Type": "DiagnosticoMedico.Dominio.ValidacionResultado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.ValidacionResultadoesController",
+    "Method": "DeleteValidacionResultado",
+    "RelativePath": "api/ValidacionResultadoes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
