@@ -97,8 +97,8 @@ namespace DiagnosticoMedico.Controllers
             return Ok(new { mensaje = $"Se encontraron {ordenExamenes.Count} órdenes de examen pendientes.",ordenExamenes});
         }
 
-
-        [HttpGet("pendientes")]
+        //lalo
+        [HttpGet("pendientes-todas-las-ordenes")]
         public async Task<IActionResult> GetPendientesTodasOrdenes()
         {
             var pendientes = await (
