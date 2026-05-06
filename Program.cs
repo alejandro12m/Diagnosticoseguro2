@@ -10,6 +10,13 @@ builder.Services.AddDbContext<DiagnosticoMedicoContext>(options =>
     options.UseNpgsql(connectionString));
 
 builder.Services.AddHttpClient();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -32,6 +39,8 @@ using (var scope = app.Services.CreateScope())
 // ✅ Swagger SIEMPRE activo
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseCors();
 
 app.UseAuthorization();
 app.MapControllers();

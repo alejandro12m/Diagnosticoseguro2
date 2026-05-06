@@ -176,6 +176,7 @@ namespace DiagnosticoMedico.Controllers
         }
 
 
+
         // PUT: api/OrdenExamen/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -206,6 +207,9 @@ namespace DiagnosticoMedico.Controllers
 
             return NoContent();
         }
+
+
+
 
         // POST: api/OrdenExamen
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
