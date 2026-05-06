@@ -244,7 +244,7 @@ namespace DiagnosticoMedico.Controllers
             {
                 return BadRequest("No existe este codigo o esta inactivo");
             }
-            actualizacion.Estado = "Listo";
+            actualizacion.EstadoOrdenLaboratorio = "Listo";
             await _context.SaveChangesAsync();
             return Ok(new { mensaje = $"Se cambio a Listo Correntamente la Orden con el codigo {code}" });
         }

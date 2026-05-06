@@ -6309,7 +6309,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {},
+    "C:\\Users\\Hp\\AppData\\Local\\Temp\\cursor-sandbox-cache\\9c2e19e252fe2e6985ae6dd45eae7a6f\\nuget": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -6318,7 +6318,7 @@
       "projectUniqueName": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
       "projectName": "DiagnosticoMedico",
       "projectPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Hp\\AppData\\Local\\Temp\\cursor-sandbox-cache\\9c2e19e252fe2e6985ae6dd45eae7a6f\\nuget",
       "outputPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -6339,7 +6339,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -6358,7 +6357,6 @@
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Tools": {
