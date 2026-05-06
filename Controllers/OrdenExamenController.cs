@@ -105,7 +105,7 @@ namespace DiagnosticoMedico.Controllers
                 from oe in _context.OrdenExamen
                 join ol in _context.OrdenLaboratorio
                     on oe.OrdenId equals ol.OrdenLaboratorioId
-                where ol.Estado == "Pendiente"
+                where ol.EstadoOrdenLaboratorio == "Pendiente"
                 select oe
             ).CountAsync();
 
