@@ -120,7 +120,7 @@ namespace DiagnosticoMedico.Controllers
                                         join mue in _context.Muestra on res.MuestraId equals mue.MuestraId
                                         join ordEx in _context.OrdenExamen on mue.MuestraId equals ordEx.MuestraId
                                         join ordLab in _context.OrdenLaboratorio on ordEx.OrdenId equals ordLab.OrdenLaboratorioId
-                                        where res.Estado != "Inactivo"
+                                        where ordLab.Estado != "Inactivo"
                                         select new ResultadoDetalladoDTO
                                         {
                                             ResultadoCodigo = res.ResultadoCodigo,

@@ -235,6 +235,21 @@ namespace DiagnosticoMedico.Controllers
         }
 
 
+        [HttpPut("MarcarComolisto/{code}")]
+        public async Task<IActionResult> PutActualizarEstado(string code) {
+            var actualizacion = await (from o in _context.OrdenLaboratorio
+                                       where o.OrdenLaboratorioCodigo == code && o.Estado != "Inactivo"
+                                       select o).FirstOrDefaultAsync();
+            if (actualizacion == null)
+            {
+                return BadRequest("No existe este codigo o esta inactivo");
+            }
+            actualizacion.Estado = "Listo";
+            await _context.SaveChangesAsync();
+            return Ok(new { mensaje = $"Se cambio a Listo Correntamente la Orden con el codigo {code}" });
+        }
+
+
         // PUT: api/OrdenLaboratorios/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{code}")]
