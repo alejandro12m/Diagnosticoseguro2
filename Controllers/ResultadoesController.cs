@@ -58,7 +58,6 @@ namespace DiagnosticoMedico.Controllers
 
 
 
-        //Resutlado para una Orden especifica
         // GET: api/Laboratorio/ConsultaMedico/ORD-2026-001
         [HttpGet("ConsultaMedico/{codigoOrden}")]
         public async Task<IActionResult> GetResultadoPorCodigo(string codigoOrden)
@@ -71,18 +70,16 @@ namespace DiagnosticoMedico.Controllers
                                         join mue in _context.Muestra on res.MuestraId equals mue.MuestraId
                                         join ordEx in _context.OrdenExamen on mue.MuestraId equals ordEx.MuestraId
                                         join ordLab in _context.OrdenLaboratorio on ordEx.OrdenId equals ordLab.OrdenLaboratorioId
-                                        where ordEx.OrdenLaboratorio.OrdenLaboratorioCodigo == codigoOrden && res.Estado != "Inactivo" && ordLab.EstadoOrdenLaboratorio != "Pendiente"
-                                        select new ResultadoPacienteDoctorDTO
+                                        where ordLab.OrdenLaboratorioCodigo == codigoOrden && res.Estado != "Inactivo"
+                                        select new ResultadoEspecificoDTO
                                         {
-                                            ResultadoCodigo = res.ResultadoCodigo,
-                                            CodigoPaciente = ordLab.PacienteCodigo,
+                                            PacienteCodigo = ordLab.PacienteCodigo,
                                             OrdenCodigo = ordLab.OrdenLaboratorioCodigo,
-                                            TipoAtencion = ordLab.TipoAtencion,
-                                            ExamenNombre = exam.Nombre,
-                                            ParametroNombre = param.Nombre,
+                                            Examen = exam.Nombre,
+                                            Parametro = param.Nombre,
                                             Valor = res.Valor,
                                             Unidad = param.Unidad,
-                                            Referencia = $"{param.ValorMin} - {param.ValorMax}",
+                                            Referencia = $"{param.ValorMin} - {param.ValorMax} {param.Unidad}",
                                             Fecha = res.FechaResultado
                                         }).ToListAsync();
 
@@ -100,10 +97,10 @@ namespace DiagnosticoMedico.Controllers
             }
             catch (Exception ex)
             {
+                // Esto captura errores si algún campo no coincide en el mapeo de EF Core
                 return StatusCode(500, new { error = "Error en la consulta", detalle = ex.Message });
             }
         }
-
 
 
 
