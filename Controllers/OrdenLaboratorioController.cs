@@ -259,7 +259,7 @@ namespace DiagnosticoMedico.Controllers
 
             foreach (var ex in examenes)
             {
-                ex.Estado = "Listo";
+                ex.EstadoOrdenExamen = "Listo";
             }
 
             await _context.SaveChangesAsync();
