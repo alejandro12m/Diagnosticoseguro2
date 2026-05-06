@@ -679,6 +679,22 @@
   },
   {
     "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
+    "Method": "PutActualizarEstado",
+    "RelativePath": "api/OrdenLaboratorio/MarcarComolisto/{code}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosticoMedico.Controllers.OrdenLaboratorioController",
     "Method": "GetMuestrasPorEstado",
     "RelativePath": "api/OrdenLaboratorio/muestras-por-estado",
     "HttpMethod": "GET",
