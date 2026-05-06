@@ -236,17 +236,38 @@ namespace DiagnosticoMedico.Controllers
 
         //lalo
         [HttpPut("MarcarComolisto/{code}")]
-        public async Task<IActionResult> PutActualizarEstado(string code) {
-            var actualizacion = await (from o in _context.OrdenLaboratorio
-                                       where o.OrdenLaboratorioCodigo == code && o.Estado != "Inactivo"
-                                       select o).FirstOrDefaultAsync();
+        public async Task<IActionResult> PutActualizarEstado(string code)
+        {
+            var actualizacion = await (
+                from o in _context.OrdenLaboratorio
+                where o.OrdenLaboratorioCodigo == code && o.Estado != "Inactivo"
+                select o
+            ).FirstOrDefaultAsync();
+
             if (actualizacion == null)
             {
                 return BadRequest("No existe este codigo o esta inactivo");
             }
+
             actualizacion.EstadoOrdenLaboratorio = "Listo";
+
+            var examenes = await (
+                from oe in _context.OrdenExamen
+                where oe.OrdenId == actualizacion.OrdenLaboratorioId
+                select oe
+            ).ToListAsync();
+
+            foreach (var ex in examenes)
+            {
+                ex.Estado = "Listo";
+            }
+
             await _context.SaveChangesAsync();
-            return Ok(new { mensaje = $"Se cambio a Listo Correntamente la Orden con el codigo {code}" });
+
+            return Ok(new
+            {
+                mensaje = $"Se cambio a Listo correctamente la Orden y {examenes.Count} examenes"
+            });
         }
 
 
