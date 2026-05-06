@@ -21,7 +21,7 @@ builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<DiagnosticoMedicoContext>();
-    context.Database.Migrate();
+    context.Database.EnsureCreated();
 }
 // Configure the HTTP request pipeline.
 
