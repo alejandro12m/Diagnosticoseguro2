@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj": {}
+    "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj": {
+    "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
         "projectName": "DiagnosticoMedico",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\DiagnosticoMedico.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoMedico\\DiagnosticoMedico\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\DiagnosticoFinal\\DiagnosticoMedico\\DiagnosticoMedico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
